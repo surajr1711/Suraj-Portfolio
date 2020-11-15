@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  margin: auto;
+  margin-top: $spacing-6;
+}
+.display {
+  flex: 0 1 50%;
+}
+.img {
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+.desc {
+  flex: 0 1 50%;
+  margin-left: $spacing-4;
+  transition: $hover-transition;
+}
+.heading {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    max-width: 500px;
+    flex-wrap: wrap;
+  }
+  .stack {
+    margin: 0.5rem 0 1rem 0;
+  }
+  .desc p {
+    display: none;
+  }
+  .display,
+  .desc {
+    flex: 0 1 100%;
+  }
+  .desc {
+    margin-left: unset;
+  }
+  .heading {
+    margin-top: 1rem;
+  }
+}

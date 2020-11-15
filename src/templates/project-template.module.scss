@@ -1,0 +1,49 @@
+@import "../styles/variables";
+
+.article {
+  margin-bottom: $spacing-6;
+  h1 {
+    @include h2-font-style;
+    text-align: center;
+  }
+  h2 {
+    @include h3-font-style;
+    text-align: center;
+    margin-top: $spacing-4;
+  }
+  h3 {
+    @include h4-font-style;
+  }
+  img {
+    margin: 1rem 0;
+    display: block;
+    width: 100%;
+  }
+}
+.links,
+.stack {
+  margin: $spacing-4 auto;
+  justify-content: center;
+}
+.markdown {
+  ul {
+    column-count: 2;
+    column-gap: $spacing-4;
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 1rem;
+  }
+}
+.projectsBtn {
+  margin: auto;
+  margin-bottom: $spacing-6;
+}
+@media only screen and (max-width: 800px) {
+  .markdown {
+    ul {
+      column-count: unset;
+    }
+  }
+}

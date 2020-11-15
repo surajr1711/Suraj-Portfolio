@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.intro {
+  flex: 0 2 500px;
+  margin-right: 1rem;
+}
+.heading {
+  margin-bottom: 1.5rem;
+}
+.img {
+  flex: 0 5 500px;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  margin-left: $spacing-4;
+}
+.vid {
+  width: 100%;
+  margin-top: $spacing-4;
+  video {
+    width: 100%;
+  }
+}
+.tagline {
+  @include tagline-font-style;
+  margin-top: $spacing-4;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.contactLink {
+  margin: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .intro {
+    margin: unset;
+    text-align: center;
+  }
+  .img {
+    margin-left: unset;
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../styles/variables";
+
+.techStack {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding: 0;
+  max-width: 550px;
+  width: 100%;
+  li {
+    text-transform: uppercase;
+    color: $text-medium;
+    @include small-font-style;
+  }
+  li:not(:last-child) {
+    margin-right: 1rem;
+  }
+}

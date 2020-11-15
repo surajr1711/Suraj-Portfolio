@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.heading {
+  text-align: center;
+}
+.tagline {
+  @include tagline-font-style;
+  margin-top: $spacing-4;
+  text-align: center;
+}
+.slide:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 800px) {
+  .slide {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.heading,
+.text {
+  text-align: center;
+}
+.text {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+.img {
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+.tagline {
+  @include tagline-font-style;
+  text-align: center;
+}

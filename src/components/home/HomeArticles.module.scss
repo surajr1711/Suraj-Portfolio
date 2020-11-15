@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.article {
+  flex: 0 1 375px;
+}
+.heading {
+  text-align: center;
+}
+.linkWrapper {
+  margin-top: clamp(2rem, 5vw, 3rem);
+}
+.seeAllArticles {
+  @include body-font-style;
+  margin: auto;
+}

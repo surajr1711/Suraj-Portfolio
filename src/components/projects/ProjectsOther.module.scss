@@ -1,0 +1,44 @@
+@import "../../styles/variables";
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid $text-light;
+}
+.desc {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  column-gap: 2rem;
+  flex: 1 1 100%;
+  &_heading {
+    @include h4-font-style;
+    color: $text-dark;
+    flex: 0 1 350px;
+  }
+}
+.desc_heading,
+.desc_stack,
+.links {
+  margin: 0;
+  margin-top: 0.5rem;
+}
+.links {
+  flex: 0 1;
+  visibility: hidden;
+}
+.project:hover .links {
+  visibility: visible;
+}
+
+@media only screen and (max-width: 800px) {
+  .project {
+    align-items: flex-start;
+  }
+  .desc {
+    flex-wrap: wrap;
+  }
+}

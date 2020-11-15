@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+.wrapper {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  gap: $spacing-4;
+  max-width: 600px;
+  width: 100%;
+}
+.wrapper__icons {
+  @extend .wrapper;
+  gap: 1rem;
+}
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: $text-light;
+  transition: $hover-transition;
+  &:hover {
+    color: $text-dark;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .link_icon {
+    @include icon-font-style;
+  }
+}

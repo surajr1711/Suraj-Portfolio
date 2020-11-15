@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.link {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  @include icon-font-style;
+  width: fit-content;
+  align-items: center;
+  &_text,
+  &_icon {
+    transition: $hover-transition;
+  }
+}
+.link:hover .link_text {
+  color: $text-dark;
+}
+.link:hover .link_icon {
+  color: $text-dark;
+  transform: translateX(1rem);
+}

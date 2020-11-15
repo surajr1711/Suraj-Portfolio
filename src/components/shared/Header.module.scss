@@ -1,0 +1,67 @@
+@import "../../styles/variables";
+
+.header {
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $page-bg;
+  z-index: 100;
+  // outline: 1px solid blue;
+}
+.wrapper {
+  max-width: 1920px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  text-transform: unset;
+}
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+  }
+}
+.navLink {
+  color: $text-light;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+.navLink:hover {
+  color: $text-medium;
+}
+.activeNavLink {
+  color: $text-dark;
+}
+.menuBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  display: none;
+  &_icon {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  // .header {
+  //   padding: 1rem;
+  // }
+  .nav {
+    ul {
+      display: none;
+    }
+  }
+  .menuBtn {
+    display: block;
+  }
+}

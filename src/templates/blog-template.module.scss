@@ -1,0 +1,26 @@
+@import "../styles/variables";
+
+.article {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: $spacing-6;
+  h1 {
+    @include h3-font-style;
+  }
+  h2 {
+    @include tagline-font-style;
+  }
+  h3 {
+    @include h4-font-style;
+  }
+  img {
+    margin: 1rem 0;
+    display: block;
+    width: 100%;
+  }
+}
+.blogBtn {
+  margin: auto;
+  margin-bottom: $spacing-6;
+}

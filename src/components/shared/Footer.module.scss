@@ -1,0 +1,50 @@
+@import "../../styles/variables";
+
+.footer {
+  background: rgba(168, 168, 168, 0.2);
+  padding: clamp(4rem, 8vw, 6rem) 1rem;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+.tagline {
+  margin-bottom: 2rem;
+  span {
+    display: block;
+    @include tagline-font-style;
+    font-family: "Playfair Display", serif;
+  }
+}
+.contactLink {
+  font-size: clamp(3rem, 8vw, 6rem);
+}
+
+.social {
+  padding: 0;
+  margin-top: clamp(4rem, 10vw, 8rem);
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  &_link {
+    color: $text-light;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 2rem;
+  }
+  &_link:hover {
+    color: $text-medium;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .tagline {
+    text-align: center;
+  }
+  .contactLink {
+    margin: auto;
+  }
+  .social {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

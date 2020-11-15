@@ -1,0 +1,15 @@
+.heading {
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  gap: 6rem;
+}
+
+// not required when using slider.
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+
+.testimonial {
+  flex: 0 1 470px;
+  margin-left: 3rem;
+}
+
+.message {
+  color: rgba(0, 0, 0, 0.75);
+  position: relative;
+  &::before {
+    content: '"';
+    position: absolute;
+    font-size: 4rem;
+    color: $text-light;
+    top: -2rem;
+    left: -2rem;
+  }
+}
+
+.profile {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+
+  &_img {
+    flex: 0 0 100px;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+  }
+
+  &_desc {
+    margin: 0;
+    &Name,
+    &Position,
+    &Company {
+      display: block;
+    }
+    &Name {
+      margin-bottom: 0.25rem;
+    }
+    &Position,
+    &Company {
+      color: $text-medium;
+      @include small-font-style;
+    }
+  }
+}

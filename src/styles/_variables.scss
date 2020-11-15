@@ -1,0 +1,63 @@
+$text-dark: rgba(0, 0, 0, 0.9);
+$text-medium: rgba(0, 0, 0, 0.55);
+$text-light: rgba(0, 0, 0, 0.35);
+$text-vlight: rgba(139, 139, 139, 0.05);
+
+$page-bg: #f8f8f8;
+$accent: #55acac;
+
+$spacing-4: clamp(2rem, 5vw, 4rem);
+$spacing-6: clamp(3rem, 8vw, 6rem);
+$spacing-15: clamp(4rem, 18vw, 15rem);
+$hover-transition: all 0.25s 0s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$border-radius: 3px;
+$box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+@mixin h1-font-style {
+  font-size: clamp(3rem, 10vw, 8rem);
+}
+@mixin h2-font-style {
+  font-size: clamp(2rem, 6vw, 5rem);
+}
+@mixin h3-font-style {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+}
+@mixin tagline-font-style {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.1rem, 3vw, 2.2rem);
+}
+@mixin icon-font-style {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  // color: $text-light;
+}
+@mixin h4-font-style {
+  font-size: clamp(1.05rem, 2vw, 1.5rem);
+  text-transform: unset;
+}
+@mixin body-font-style {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+}
+@mixin small-font-style {
+  font-size: clamp(0.7rem, 1.55vw, 0.85rem);
+}
+
+@mixin anchor-font-style {
+  text-decoration: none;
+  color: inherit;
+}
+// @mixin nav-list-styles {
+// 	ul {
+//     margin: 0;
+//     list-style-type: none;
+// 		display: flex;
+// 		li a {
+// 			color: $text-light;
+// 			text-transform: uppercase;
+// 			text-decoration: none;
+// 			margin-left: 2rem;
+// 		}
+// 		li a:hover {
+// 			color: $text-medium;
+// 		}
+//   }
+// }

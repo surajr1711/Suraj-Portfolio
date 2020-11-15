@@ -1,0 +1,29 @@
+// @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap");
+
+@import "variables";
+@import "typography";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  width: 100%;
+  max-width: 2160px;
+  margin: auto;
+  overflow-x: hidden;
+  background-color: $page-bg;
+}
+main {
+  margin: $spacing-6 auto;
+}
+section {
+  margin: $spacing-15 auto;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 4rem;
+  padding: 1rem;
+}

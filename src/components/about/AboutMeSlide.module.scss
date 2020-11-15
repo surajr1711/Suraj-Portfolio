@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+
+.wrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  margin-top: $spacing-6;
+}
+.img {
+  flex: 0 1 550px;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+.text {
+  margin-top: 2rem;
+  flex: 0 1 500px;
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    gap: 1rem;
+  }
+  .text {
+    margin-top: unset;
+  }
+}

@@ -1,0 +1,13 @@
+.heading {
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 1rem;
+  row-gap: 2rem;
+}
+.article {
+  flex: 0 1 375px;
+}

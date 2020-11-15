@@ -1,0 +1,64 @@
+@import "../../styles/variables";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.intro {
+  padding-right: 1rem;
+  position: relative;
+}
+.heading {
+  margin-bottom: 1.5rem;
+  // position: relative;
+  // &::before {
+  //   content: "Radhakrishnan";
+  //   position: absolute;
+  //   font-size: 20rem;
+  //   color: $text-vlight;
+  // }
+}
+.desc {
+  max-width: 450px;
+}
+.aboutLink {
+  color: $accent;
+  text-decoration: none;
+}
+.img {
+  flex: 0 10 500px;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+.contactLinkWrapper {
+  width: 100%;
+  margin-top: 2rem;
+}
+.contactLink {
+  position: relative;
+  left: 25%;
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .intro {
+    padding: unset;
+  }
+  .heading,
+  .desc {
+    text-align: center;
+  }
+  .contactLinkWrapper {
+    display: grid;
+    justify-content: center;
+  }
+  .contactLink {
+    left: unset;
+  }
+  .techStack {
+    justify-content: center;
+  }
+}

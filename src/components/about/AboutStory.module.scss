@@ -1,0 +1,50 @@
+@import "../../styles/variables";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.desc {
+  flex: 0 1 500px;
+  margin-right: 1rem;
+  p:last-child {
+    @include tagline-font-style;
+    margin-top: $spacing-4;
+    margin-bottom: 1rem;
+    text-align: right;
+  }
+}
+// .tagline {
+//   @include tagline-font-style;
+//   margin-top: $spacing-4;
+//   margin-bottom: 1rem;
+//   text-align: right;
+// }
+.gorilla {
+  margin-left: $spacing-4;
+  flex: 0 1 500px;
+  video {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .desc {
+    margin: unset;
+    text-align: center;
+  }
+  .heading,
+  .tagline {
+    text-align: center;
+  }
+  .gorilla {
+    margin-left: unset;
+    flex: 0 1 400px;
+  }
+}
